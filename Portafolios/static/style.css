@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ba1670;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #34dbd0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ... Otros estilos ... */
+
+/* Estilo de la sección de habilidades */
+#skills {
+    background-color: #373737; /* Rojo brillante */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/* Estilo de la lista de habilidades */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo de cada habilidad individual */
+.skill-item {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las barras de progreso */
+.progress {
+    height: 20px;
+    background-color: #b7b7b7; /* Fondo gris oscuro */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    background-color: #b91588; /* Azul brillante */
+    color: #ffffff; /* Texto blanco */
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #961f5d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#projects {
+    background: #373737;
+    padding: 25px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+#education {
+    background: #373737;
+    padding: 25px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+
+#MenuPrincipal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    z-index: 1000; 
+    border-radius: 15px;
+}
+.nav-link a {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 10px;
+}
+
+a {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 10px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 20px;
+    color: #ba1670;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 15px;
+    color: #dbdbdb;
+}
+.project-item {
+    border-bottom: solid 1px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.education-item {
+    border-bottom: solid 1px;
+    padding: 5px;
+    margin: 20px;
+}
+
+
+/* Estilo de los puntos animados */
+@keyframes moveDots {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px); /* Ajusta la distancia vertical del movimiento */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de los puntos */
+.dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+    pointer-events: none;
+    z-index: -100; /* Coloca los puntos detrás del contenido principal */
+}
+
+.dot {
+    position: absolute;
+    background-color: #7d7d7d; /* Color de los puntos */
+    width: 4px; /* Ancho de cada punto */
+    height: 4px; /* Altura de cada punto */
+    border-radius: 50%;
+    animation: moveDots 2s infinite linear; /* Duración y repetición de la animación */
+}
+
+.svg-inline--fa {
+    color: #ba1670;
+}
+.fa-2x {
+    font-size: 4em;
+}
